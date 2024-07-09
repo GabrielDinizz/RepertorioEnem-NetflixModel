@@ -1,0 +1,593 @@
+{
+    "repertorios": [
+      {
+        "id": 1,
+        "tipo": "livro",
+        "titulo": "1984",
+        "autor": "George Orwell",
+        "ano": 1949,
+        "eixos_tematicos": ["Questões Sociais", "Política"],
+        "descricao": "Um clássico distópico que aborda temas como vigilância, totalitarismo e controle social. A narrativa de Orwell é uma crítica à manipulação da informação e à perda de liberdade, sendo altamente relevante para discussões sobre regimes autoritários e direitos civis.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://m.media-amazon.com/images/I/51VXYaKO-sL._SY445_SX342_.jpg"
+
+      },
+      {
+        "id": 2,
+        "tipo": "musica",
+        "titulo": "Imagine",
+        "artista": "John Lennon",
+        "ano": 1971,
+        "eixos_tematicos": ["Questões Sociais", "Paz"],
+        "descricao": "Uma canção icônica que promove a paz e a união entre as pessoas. Com uma letra que imagina um mundo sem fronteiras, religiões e posses, a música é frequentemente utilizada em discussões sobre utopia e solidariedade global.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://www.michaelgodardartgallery.com/cdn/shop/products/john_lennon_imagine_555x.progressive.jpg?v=1549590602"
+
+      },
+      {
+        "id": 3,
+        "tipo": "filme",
+        "titulo": "Tempos Modernos",
+        "ano": 1936,
+        "diretor": "Charlie Chaplin",
+        "eixos_tematicos": ["Trabalho", "Tecnologia"],
+        "descricao": "Um filme clássico de Chaplin que critica a industrialização e o impacto da tecnologia na vida dos trabalhadores. A narrativa aborda a alienação e a exploração no ambiente de trabalho, sendo uma referência importante para discussões sobre a Revolução Industrial e o capitalismo.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/3/36/Modern_Times_poster.jpg"
+
+      },
+      {
+        "id": 4,
+        "tipo": "livro",
+        "titulo": "O Pequeno Príncipe",
+        "autor": "Antoine de Saint-Exupéry",
+        "ano": 1943,
+        "eixos_tematicos": ["Questões Sociais", "Filosofia"],
+        "descricao": "Uma fábula filosófica que explora temas como amor, amizade e o sentido da vida. Através das aventuras do pequeno príncipe, o autor faz uma reflexão sobre a natureza humana e a importância de ver o mundo com os olhos da criança.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://m.media-amazon.com/images/I/61ATa0Pc4AL._AC_UF1000,1000_QL80_.jpg"
+
+      },
+      {
+        "id": 5,
+        "tipo": "musica",
+        "titulo": "Blowin' in the Wind",
+        "artista": "Bob Dylan",
+        "ano": 1963,
+        "eixos_tematicos": ["Direitos Civis", "Paz"],
+        "descricao": "Uma canção símbolo dos movimentos pelos direitos civis nos Estados Unidos. A letra questiona a injustiça e a desigualdade, sendo uma referência para discussões sobre direitos humanos e movimentos sociais.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://imusic.b-cdn.net/images/item/original/143/3149020937143.jpg?bob-dylan-2019-blowin-in-the-wind-lp&class=scaled&v=1551602836"
+
+      },
+      {
+        "id": 6,
+        "tipo": "filme",
+        "titulo": "A Lista de Schindler",
+        "ano": 1993,
+        "diretor": "Steven Spielberg",
+        "eixos_tematicos": ["História", "Direitos Humanos"],
+        "descricao": "Baseado em fatos reais, o filme narra a história de Oskar Schindler, um industrial que salvou mais de mil judeus durante o Holocausto. A obra é uma poderosa reflexão sobre a coragem e a humanidade em tempos de barbárie.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://br.web.img2.acsta.net/pictures/19/04/10/19/44/2904073.jpg"
+
+      },
+      {
+        "id": 7,
+        "tipo": "livro",
+        "titulo": "Dom Quixote",
+        "autor": "Miguel de Cervantes",
+        "ano": 1605,
+        "eixos_tematicos": ["Literatura", "Filosofia"],
+        "descricao": "Considerado um dos maiores clássicos da literatura mundial, Dom Quixote aborda temas como idealismo, loucura e a busca por um mundo melhor. A obra é uma sátira à sociedade da época e uma reflexão sobre os valores humanos.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://www.lpm.com.br/livros/imagens/dom_quixote_hq_9788525425669_hd.jpg"
+
+      },
+      {
+        "id": 8,
+        "tipo": "musica",
+        "titulo": "Aquarela do Brasil",
+        "artista": "Ary Barroso",
+        "ano": 1939,
+        "eixos_tematicos": ["Cultura Brasileira", "Nacionalismo"],
+        "descricao": "Um clássico da música brasileira que exalta as belezas naturais e culturais do Brasil. A canção é frequentemente utilizada em discussões sobre identidade nacional e o papel da cultura na formação do sentimento de pertencimento.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/1/1b/Aquarela_do_Brasil_%28curta-metragem%29.jpg/200px-Aquarela_do_Brasil_%28curta-metragem%29.jpg"
+
+      },
+      {
+        "id": 9,
+        "tipo": "filme",
+        "titulo": "O Grande Ditador",
+        "ano": 1940,
+        "diretor": "Charlie Chaplin",
+        "eixos_tematicos": ["Política", "Direitos Humanos"],
+        "descricao": "Uma sátira ao nazismo e às ditaduras, o filme de Chaplin é uma crítica poderosa ao totalitarismo e à opressão. A famosa cena do discurso final é um apelo à paz e à solidariedade entre os povos.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/The_Great_Dictator_%281940%29_poster.jpg/233px-The_Great_Dictator_%281940%29_poster.jpg"
+
+      },
+      {
+        "id": 10,
+        "tipo": "livro",
+        "titulo": "O Apanhador no Campo de Centeio",
+        "autor": "J.D. Salinger",
+        "ano": 1951,
+        "eixos_tematicos": ["Adolescência", "Questões Sociais"],
+        "descricao": "A obra narra as angústias e os desafios da adolescência através do personagem Holden Caulfield. É uma reflexão sobre a transição para a vida adulta e os conflitos internos dessa fase da vida.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://m.media-amazon.com/images/I/5193mgpULoL.jpg"
+
+      },
+      {
+        "id": 11,
+        "tipo": "musica",
+        "titulo": "Cálice",
+        "artista": "Chico Buarque",
+        "ano": 1973,
+        "eixos_tematicos": ["Política", "Direitos Humanos"],
+        "descricao": "Uma canção de protesto contra a censura e a repressão durante a ditadura militar no Brasil. A letra usa metáforas para criticar a falta de liberdade e a violência do regime, sendo uma referência importante para discussões sobre resistência e direitos civis.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://d2p73dvwcg8th4.cloudfront.net/Custom/Content/Products/74/92/74924_calice-17662_z1_637943597346096027.jpg"
+
+      },
+      {
+        "id": 12,
+        "tipo": "filme",
+        "titulo": "Matrix",
+        "ano": 1999,
+        "diretor": "Lana e Lilly Wachowski",
+        "eixos_tematicos": ["Tecnologia", "Filosofia"],
+        "descricao": "Um filme de ficção científica que explora a relação entre realidade e ilusão, bem como os perigos da tecnologia avançada. A narrativa levanta questões filosóficas sobre o livre-arbítrio e a natureza da existência.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://br.web.img2.acsta.net/medias/nmedia/18/91/08/82/20128877.JPG"
+
+      },
+      {
+        "id": 13,
+        "tipo": "livro",
+        "titulo": "Capitães da Areia",
+        "autor": "Jorge Amado",
+        "ano": 1937,
+        "eixos_tematicos": ["Questões Sociais", "Infância"],
+        "descricao": "A obra retrata a vida de crianças de rua em Salvador, abordando temas como pobreza, marginalização e a luta por sobrevivência. É uma crítica social que destaca a necessidade de políticas públicas voltadas para a infância e juventude.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://m.media-amazon.com/images/I/518UWo1qbVL._AC_UF1000,1000_QL80_.jpg"
+
+      },
+      {
+        "id": 14,
+        "tipo": "musica",
+        "titulo": "Mercedes Benz",
+        "artista": "Janis Joplin",
+        "ano": 1970,
+        "eixos_tematicos": ["Consumo", "Sociedade"],
+        "descricao": "Uma canção que ironiza o materialismo e a busca por status social. A letra critica a obsessão por bens de consumo e a superficialidade das relações sociais, sendo relevante para discussões sobre capitalismo e valores culturais.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://i.ebayimg.com/images/g/lBQAAOSw7eleSVF~/s-l1200.webp"
+
+      },
+      {
+        "id": 15,
+        "tipo": "filme",
+        "titulo": "A Teoria de Tudo",
+        "ano": 2014,
+        "diretor": "James Marsh",
+        "eixos_tematicos": ["Saúde e Ciência"],
+        "descricao": "A biografia do físico Stephen Hawking, que lutou contra a esclerose lateral amiotrófica enquanto fazia contribuições significativas para a ciência. O filme aborda temas como superação, amor e a busca pelo conhecimento.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://br.web.img3.acsta.net/pictures/14/12/02/22/15/327211.jpg"
+
+      },
+      {
+        "id": 16,
+        "tipo": "livro",
+        "titulo": "Ensaio sobre a Cegueira",
+        "autor": "José Saramago",
+        "ano": 1995,
+        "eixos_tematicos": ["Questões Sociais", "Filosofia"],
+        "descricao": "Um romance que aborda a fragilidade da civilização quando uma epidemia de cegueira atinge uma cidade. Saramago faz uma reflexão sobre a natureza humana, a solidariedade e a brutalidade em situações extremas.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://m.media-amazon.com/images/I/41iQySvQq0L._SY445_SX342_.jpg"
+
+      },
+      {
+        "id": 17,
+        "tipo": "musica",
+        "titulo": "What a Wonderful World",
+        "artista": "Louis Armstrong",
+        "ano": 1967,
+        "eixos_tematicos": ["Questões Sociais", "Esperança"],
+        "descricao": "Uma canção que celebra as belezas simples da vida e a esperança em um mundo melhor. A letra otimista é uma referência positiva para discussões sobre a capacidade humana de encontrar beleza e bondade em meio às adversidades.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://m.media-amazon.com/images/I/71oBdOk+2BL._AC_UF1000,1000_QL80_.jpg"
+
+      },
+      {
+        "id": 18,
+        "tipo": "filme",
+        "titulo": "Guerra ao Terror",
+        "ano": 2008,
+        "diretor": "Kathryn Bigelow",
+        "eixos_tematicos": ["Guerra", "Psicologia"],
+        "descricao": "Um filme que retrata o trabalho de uma equipe de desarmamento de bombas durante a guerra no Iraque. A obra aborda os efeitos psicológicos da guerra sobre os soldados e a tensão constante em situações de conflito.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/31/36/19874211.jpg"
+
+      },
+      {
+        "id": 19,
+        "tipo": "livro",
+        "titulo": "O Homem que Calculava",
+        "autor": "Malba Tahan",
+        "ano": 1938,
+        "eixos_tematicos": ["Matemática", "Educação"],
+        "descricao": "Uma obra que mistura ficção e matemática, contando as aventuras de um talentoso calculista na antiga Bagdá. O livro é uma celebração da matemática e de seu papel na resolução de problemas e no desenvolvimento intelectual.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://m.media-amazon.com/images/I/91RiUE8mFdL._AC_UF1000,1000_QL80_.jpg"
+
+      },
+      {
+        "id": 20,
+        "tipo": "musica",
+        "titulo": "Get Up, Stand Up",
+        "artista": "Bob Marley",
+        "ano": 1973,
+        "eixos_tematicos": ["Direitos Humanos", "Resistência"],
+        "descricao": "Uma canção de protesto que encoraja as pessoas a lutarem por seus direitos e a não aceitarem a opressão. A letra de Marley é um chamado à ação e à resistência, sendo relevante para discussões sobre direitos civis e ativismo.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://egoamo.co.za/cdn/shop/products/BobMarley-GetUpStandUpMusicPosteregoamo.co.zaPosters_800x.jpg?v=1656065540"
+
+      },
+      {
+        "id": 21,
+        "tipo": "filme",
+        "titulo": "O Jogo da Imitação",
+        "ano": 2014,
+        "diretor": "Morten Tyldum",
+        "eixos_tematicos": ["Tecnologia", "História"],
+        "descricao": "A biografia de Alan Turing, um matemático e criptoanalista que decifrou códigos nazistas durante a Segunda Guerra Mundial. O filme aborda temas como a inovação tecnológica, a perseguição devido à orientação sexual e o impacto de Turing na ciência da computação.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://upload.wikimedia.org/wikipedia/pt/1/1a/O_Jogo_da_Imita%C3%A7%C3%A3o.jpg"
+
+      },
+      {
+        "id": 22,
+        "tipo": "livro",
+        "titulo": "O Cortiço",
+        "autor": "Aluísio Azevedo",
+        "ano": 1890,
+        "eixos_tematicos": ["Questões Sociais", "Realismo"],
+        "descricao": "Um romance que retrata a vida em um cortiço no Rio de Janeiro, abordando temas como pobreza, exploração e a luta pela sobrevivência. A obra é uma crítica social que expõe as desigualdades e as condições de vida da classe trabalhadora.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://m.media-amazon.com/images/I/8153IdR+NyL._AC_UF1000,1000_QL80_.jpg"
+
+      },
+      {
+        "id": 23,
+        "tipo": "musica",
+        "titulo": "We Are the World",
+        "artista": "USA for Africa",
+        "ano": 1985,
+        "eixos_tematicos": ["Solidariedade", "Questões Sociais"],
+        "descricao": "Uma canção de caridade gravada por um grupo de artistas para arrecadar fundos para combater a fome na África. A letra promove a solidariedade e a ação conjunta em prol dos mais necessitados, sendo uma referência para discussões sobre altruísmo e responsabilidade social.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/01/29/992452646-we-are-the-world-1-cbs.jpg"
+      },
+      {
+        "id": 24,
+        "tipo": "filme",
+        "titulo": "12 Anos de Escravidão",
+        "ano": 2013,
+        "diretor": "Steve McQueen",
+        "eixos_tematicos": ["História", "Direitos Humanos"],
+        "descricao": "Baseado em uma história real, o filme narra a luta de Solomon Northup, um homem negro livre que foi sequestrado e vendido como escravo. A obra aborda a brutalidade da escravidão e a luta pela liberdade, sendo uma reflexão poderosa sobre a injustiça e a resistência.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://sistematicas.wordpress.com/wp-content/uploads/2014/06/12-anos-de-escravidao-12-years-a-slave.jpg?w=600"
+
+      },
+      {
+        "id": 25,
+        "tipo": "livro",
+        "titulo": "O Nome da Rosa",
+        "autor": "Umberto Eco",
+        "ano": 1980,
+        "eixos_tematicos": ["Literatura", "Filosofia"],
+        "descricao": "Um romance policial ambientado em um mosteiro medieval, que mistura história, filosofia e mistério. A obra explora temas como a busca pelo conhecimento, a censura e o poder da Igreja, sendo uma rica fonte para discussões sobre a Idade Média e a filosofia medieval.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://m.media-amazon.com/images/I/81uo8phJ+zL._AC_UF1000,1000_QL80_.jpg"
+
+      },
+      {
+        "id": 26,
+        "tipo": "musica",
+        "titulo": "Zumbi",
+        "artista": "Jorge Ben Jor",
+        "ano": 1974,
+        "eixos_tematicos": ["Cultura Brasileira", "História"],
+        "descricao": "Uma canção que homenageia Zumbi dos Palmares, líder do Quilombo dos Palmares e símbolo da resistência negra no Brasil. A letra celebra a luta pela liberdade e a resistência contra a opressão, sendo relevante para discussões sobre história e cultura afro-brasileira.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://www.blogderocha.com.br/wp-content/uploads/2017/11/overlay.jpg"
+
+      },
+      {
+        "id": 27,
+        "tipo": "filme",
+        "titulo": "A Vida é Bela",
+        "ano": 1997,
+        "diretor": "Roberto Benigni",
+        "eixos_tematicos": ["História", "Família"],
+        "descricao": "Um filme que narra a história de um pai judeu que utiliza o humor e a criatividade para proteger seu filho dos horrores de um campo de concentração nazista. A obra aborda a brutalidade do Holocausto e a capacidade humana de encontrar esperança em meio ao sofrimento.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://static.wikia.nocookie.net/dublagem/images/e/e4/Avidaebela.jpg/revision/latest?cb=20240202232904&path-prefix=pt-br"
+
+      },
+      {
+        "id": 28,
+        "tipo": "livro",
+        "titulo": "A Revolução dos Bichos",
+        "autor": "George Orwell",
+        "ano": 1945,
+        "eixos_tematicos": ["Direitos e Cidadania", "Questões Sociais"],
+        "descricao": "Nesta fábula política, Orwell narra a história de animais de uma fazenda que se revoltam contra seus opressores humanos, apenas para se verem sob um novo regime autoritário. A obra é uma crítica ao totalitarismo e à corrupção do poder, sendo uma referência importante para discussões sobre política, sociedade e ética.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://m.media-amazon.com/images/I/612QiXA+FyL._AC_UF1000,1000_QL80_.jpg"
+
+      },
+      
+      {
+        "id": 29,
+        "tipo": "filme",
+        "titulo": "Clube da Luta",
+        "ano": 1999,
+        "diretor": "David Fincher",
+        "eixos_tematicos": ["Questões Sociais", "Psicologia"],
+        "descricao": "Baseado no romance de Chuck Palahniuk, este filme explora temas como a alienação, o consumismo e a crise de identidade masculina na sociedade moderna. A história do protagonista que cria um clube de luta clandestino é uma crítica provocativa à cultura do excesso e à busca por sentido em um mundo materialista.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://periodico.sites.uepg.br/images/essa.jpg"
+
+      },
+      {
+        "id": 30,
+        "tipo": "livro",
+        "titulo": "Cem Anos de Solidão",
+        "autor": "Gabriel García Márquez",
+        "ano": 1967,
+        "eixos_tematicos": ["Arte e Cultura", "Questões Sociais"],
+        "descricao": "Neste romance emblemático, García Márquez narra a história da família Buendía ao longo de várias gerações na cidade fictícia de Macondo. A obra é um exemplo clássico de realismo mágico e explora temas como identidade, memória e transformação social, sendo uma referência importante para discussões sobre literatura e cultura latino-americana.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://m.media-amazon.com/images/I/819vfB2BjyL._AC_UF1000,1000_QL80_.jpg"
+
+      },
+      {
+        "id": 31,
+        "tipo": "musica",
+        "titulo": "Respect",
+        "artista": "Aretha Franklin",
+        "ano": 1967,
+        "eixos_tematicos": ["Direitos e Cidadania", "Questões Sociais"],
+        "descricao": "Esta canção se tornou um hino do movimento feminista e dos direitos civis nos Estados Unidos. A letra poderosa clama por respeito e igualdade, sendo uma referência relevante para discussões sobre empoderamento feminino e justiça social.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://i1.sndcdn.com/artworks-000048078379-tx7cf6-t500x500.jpg"
+
+      },
+      {
+        "id": 32,
+        "tipo": "filme",
+        "titulo": "O Menino do Pijama Listrado",
+        "ano": 2008,
+        "diretor": "Mark Herman",
+        "eixos_tematicos": ["Direitos e Cidadania", "História", "Questões Sociais"],
+        "descricao": "Este filme narra a amizade entre um menino alemão e um menino judeu prisioneiro em um campo de concentração nazista. A trama explora a inocência infantil em meio à brutalidade do Holocausto, sendo uma referência importante para discussões sobre memória, direitos humanos e a história da Segunda Guerra Mundial.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://m.media-amazon.com/images/I/618k8-kLLwL.__AC_SX300_SY300_QL70_ML2_.jpg"
+
+      },
+      {
+        "id": 33,
+        "tipo": "livro",
+        "titulo": "Vidas Secas",
+        "autor": "Graciliano Ramos",
+        "ano": 1938,
+        "eixos_tematicos": ["Questões Sociais", "Meio Ambiente"],
+        "descricao": "Neste romance, Graciliano Ramos narra a dura vida de uma família de retirantes nordestinos que luta pela sobrevivência em meio à seca. A obra é uma crítica social e uma reflexão sobre a miséria e a resistência humana diante das adversidades climáticas, sendo relevante para discussões sobre meio ambiente e desigualdade social.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://m.media-amazon.com/images/I/618-b9Im6dL._AC_UF1000,1000_QL80_.jpg"
+
+      },
+      {
+        "id": 34,
+        "tipo": "filme",
+        "titulo": "Sociedade dos Poetas Mortos",
+        "diretor": "Peter Weir",
+        "ano": 1989,
+        "eixos_tematicos": ["Educação", "Liberdade Individual"],
+        "descricao": "O filme narra a história de um professor de literatura que inspira seus alunos a viverem suas vidas de forma plena e autêntica, desafiando as rígidas normas da escola tradicional. A obra é uma reflexão sobre o papel da educação e a importância da liberdade individual e do pensamento crítico.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://br.web.img2.acsta.net/pictures/210/132/21013221_20130617200543616.jpg"
+
+      },
+      {
+        "id": 35,
+        "tipo": "musica",
+        "titulo": "Construção",
+        "artista": "Chico Buarque",
+        "ano": 1971,
+        "eixos_tematicos": ["Trabalho", "Desigualdade Social"],
+        "descricao": "A música narra a história de um operário da construção civil que morre em um acidente de trabalho. Com uma letra que mistura poesia e denúncia social, a canção aborda a precariedade das condições de trabalho e a desumanização do trabalhador, sendo relevante para discussões sobre trabalho e desigualdade social.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://s2-g1.glbimg.com/W6bN0XGqdNN54KNlaROvb3ZDaFs=/0x0:1600x1600/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/Q/Q/BwKPFHQda860UKzrVEbg/chicobuarqueconstrucaolpcapa.jpg"
+
+      },
+      {
+        "id": 36,
+        "tipo": "filme",
+        "titulo": "Que Horas Ela Volta?",
+        "diretor": "Anna Muylaert",
+        "ano": 2015,
+        "eixos_tematicos": ["Desigualdade Social", "Família"],
+        "descricao": "O filme aborda a história de Val, uma empregada doméstica que trabalha na casa de uma família rica em São Paulo. Quando sua filha se muda para a casa, a dinâmica entre patrões e empregados é desafiada, trazendo à tona questões de classe e desigualdade social.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/7/78/Que_horas_ela_volta_ver3_xlg.jpg/240px-Que_horas_ela_volta_ver3_xlg.jpg"
+
+      },
+      {
+        "id": 37,
+        "tipo": "livro",
+        "titulo": "O Quarto de Despejo",
+        "autor": "Carolina Maria de Jesus",
+        "ano": 1960,
+        "eixos_tematicos": ["Pobreza", "Desigualdade Social"],
+        "descricao": "Diário de uma catadora de papel, Carolina Maria de Jesus, que descreve a vida na favela do Canindé, em São Paulo. A obra é um relato visceral das dificuldades enfrentadas pela população pobre e marginalizada, sendo relevante para discussões sobre desigualdade social e exclusão.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/6/69/Quarto_de_Despejo.jpg/220px-Quarto_de_Despejo.jpg"
+
+      },
+      {
+        "id": 38,
+        "tipo": "filme",
+        "titulo": "Central do Brasil",
+        "diretor": "Walter Salles",
+        "ano": 1998,
+        "eixos_tematicos": ["Questões Sociais", "Afeto", "Redenção"],
+        "descricao": "O filme conta a história de Dora, uma ex-professora que escreve cartas para analfabetos na estação Central do Brasil, e de Josué, um menino em busca do pai. A obra aborda temas como a solidão, a busca por afeto e a possibilidade de redenção através da solidariedade.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://upload.wikimedia.org/wikipedia/pt/2/29/Central_do_Brasil_poster.jpg"
+
+      },
+      {
+        "id": 39,
+        "tipo": "filme",
+        "titulo": "O Menino que Descobriu o Vento",
+        "diretor": "Chiwetel Ejiofor",
+        "ano": 2019,
+        "eixos_tematicos": ["Educação", "Inovação", "Desigualdade Social"],
+        "descricao": "Baseado em uma história real, o filme narra a vida de um garoto de uma vila no Malawi que constrói uma turbina eólica para salvar sua comunidade da fome. A obra aborda temas como a importância da educação, a inovação tecnológica e a desigualdade social.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://m.media-amazon.com/images/I/710j0HLuwuL._AC_UF1000,1000_QL80_.jpg"
+
+      },
+      {
+        "id": 40,
+        "tipo": "musica",
+        "titulo": "Girl on Fire",
+        "artista": "Alicia Keys",
+        "ano": 2012,
+        "eixos_tematicos": ["Empoderamento Feminino", "Autoestima"],
+        "descricao": "A música 'Girl on Fire' é um hino de empoderamento feminino, destacando a força, a independência e a determinação das mulheres. A canção é relevante para discussões sobre autoestima, igualdade de gênero e a luta por direitos das mulheres.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://i.discogs.com/i3RSINd_20GZHvcEXs90CmSif5wgeoqfu-2hKv8XzVI/rs:fit/g:sm/q:90/h:600/w:580/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxMTc4/MDUtMTU4NDgzNTg4/OC04NDQ2LmpwZWc.jpeg"
+
+      },
+      {
+        "id": 41,
+        "tipo": "filme",
+        "titulo": "Dois Papas",
+        "diretor": "Fernando Meirelles",
+        "ano": 2019,
+        "eixos_tematicos": ["Religião", "Mudança", "Diálogo"],
+        "descricao": "O filme retrata o encontro fictício entre o Papa Bento XVI e o Papa Francisco, abordando temas como tradição, mudança e a importância do diálogo. A obra é relevante para discussões sobre religião, transformações sociais e a importância da comunicação entre diferentes perspectivas.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://br.web.img3.acsta.net/pictures/19/10/11/23/59/1464289.jpg"
+
+      },
+      {
+        "id": 42,
+        "tipo": "livro",
+        "titulo": "Hibisco Roxo",
+        "autor": "Chimamanda Ngozi Adichie",
+        "ano": 2003 ,
+        "eixos_tematicos": ["Família", "Religião", "Liberdade"],
+        "descricao": "O romance narra a vida de uma jovem nigeriana em uma família opressiva e religiosa, explorando temas como liberdade, opressão e os efeitos da religião na vida familiar. A obra é relevante para discussões sobre dinâmicas familiares, liberdade e cultura africana.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://m.media-amazon.com/images/I/81hobIPsJAL._AC_UF1000,1000_QL80_.jpg"
+
+      },
+      
+      {
+        "id": 43,
+        "tipo": "musica",
+        "titulo": "AmarElo",
+        "artista": "Emicida",
+        "ano": 2019,
+        "eixos_tematicos": ["Saúde Mental", "Autoestima", "Inclusão Social"],
+        "descricao": "A música 'AmarElo' de Emicida aborda questões de saúde mental, autoestima e inclusão social, com uma mensagem positiva de superação e esperança. A canção é relevante para discussões sobre a importância da saúde mental e a luta contra o estigma social.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://cebds.org/wp-content/uploads/2023/06/cebds.org-documentario-amarelo-de-emicida-e-uma-aula-de-historia-do-brasil-emicida-amarelo-filme-netflix-poster.jpg"
+
+      },
+      {
+        "id": 44,
+        "tipo": "livro",
+        "titulo": "Pequeno Manual Antirracista",
+        "autor": "Djamila Ribeiro",
+        "ano": 2019,
+        "eixos_tematicos": ["Racismo", "Justiça Social"],
+        "descricao": "Neste livro, Djamila Ribeiro oferece um guia prático e acessível para entender e combater o racismo estrutural na sociedade. A obra aborda conceitos fundamentais sobre raça, racismo e justiça social, sendo relevante para discussões contemporâneas sobre igualdade e direitos humanos.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://m.media-amazon.com/images/I/71D3cAdm0GL._AC_UF1000,1000_QL80_.jpg"
+
+      },
+      {
+        "id": 45,
+        "tipo": "musica",
+        "titulo": "This Is America",
+        "artista": "Childish Gambino",
+        "ano": 2018,
+        "eixos_tematicos": ["Violência", "Racismo", "Cultura"],
+        "descricao": "A música e o videoclipe de 'This Is America' retratam de maneira impactante a violência e o racismo sistêmico nos Estados Unidos. A canção é uma crítica social poderosa e é relevante para discussões sobre violência, racismo e a cultura americana contemporânea.",
+        "relevancia": 5,
+        "mais_usado_no_enem": 4,
+        "imagem": "https://m.media-amazon.com/images/M/MV5BZDc5ZjQ4YWUtNzQ4MC00NThhLTlmNDEtOWMzN2Y0NGVjMjBhXkEyXkFqcGdeQXVyNjMxNzQ2NTQ@._V1_.jpg"
+
+      }
+     
+    ],
+    "status": "success"
+  }
+  
