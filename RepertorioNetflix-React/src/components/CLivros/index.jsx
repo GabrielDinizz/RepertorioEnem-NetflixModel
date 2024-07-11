@@ -1,7 +1,6 @@
 import styles from './CLivros.module.css'; 
 import React from 'react';
 import Slider from 'react-slick';
-
 const CLivros = () => {
         const books = [
           {
