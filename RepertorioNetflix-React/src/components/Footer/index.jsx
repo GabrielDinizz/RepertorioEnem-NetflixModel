@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css'; // Importação do CSS Module
 
-
 const Footer = () => {
   return (
     <footer className={styles.footer}>
