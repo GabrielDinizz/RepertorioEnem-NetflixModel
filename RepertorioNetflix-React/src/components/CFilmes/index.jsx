@@ -1,66 +1,46 @@
+import React, { useEffect, useState } from 'react';
 import styles from '../CFilmes/CFilmes.module.css';
+import Card from '../../components/Card';
 
 function CFilmes() {
+    const [repertorios, setRepertorios] = useState([]);
+
+    useEffect(() => {
+        const buscarRepertorio = async () => {
+            try {
+                const response = await fetch("/repertorio.json");
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                const data = await response.json();
+                setRepertorios(data.repertorios);
+                setRepertorios(data.repertorios.slice(0, 5)); 
+            } catch (error) {
+                console.error("There was a problem with the fetch operation:", error);
+            }
+        };
+        buscarRepertorio();
+    }, []);
+
     return (
         <>
-        <section className={styles.cards}>
-            <div className={styles.card}>
-                <div className={styles['card-inner']}>
-                    <div className={styles['card-front']}>
-                        <p>Front Side 1</p>
-                    </div>
-                    <div className={styles['card-back']}>
-                        <p>Back Side 1</p>
-                    </div>
-                </div>
-            </div>
-
-            <div className={styles.card}>
-                <div className={styles['card-inner']}>
-                    <div className={styles['card-front']}>
-                        <p>Front Side 2</p>
-                    </div>
-                    <div className={styles['card-back']}>
-                        <p>Back Side 2</p>
-                    </div>
-                </div>
-            </div>
-
-            <div className={styles.card}>
-                <div className={styles['card-inner']}>
-                    <div className={styles['card-front']}>
-                        <p>Front Side 3</p>
-                    </div>
-                    <div className={styles['card-back']}>
-                        <p>Back Side 3</p>
-                    </div>
-                </div>
-            </div>
-
-            <div className={styles.card}>
-                <div className={styles['card-inner']}>
-                    <div className={styles['card-front']}>
-                        <p>Front Side 4</p>
-                    </div>
-                    <div className={styles['card-back']}>
-                        <p>Back Side 4</p>
-                    </div>
-                </div>
-            </div>
-
-            <div className={styles.card}>
-                <div className={styles['card-inner']}>
-                    <div className={styles['card-front']}>
-                        <p>Front Side 5</p>
-                    </div>
-                    <div className={styles['card-back']}>
-                        <p>Back Side 5</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <h2 className={styles.title}>Filmes</h2>
+            {repertorios.length > 0 ? (
+                <section className={styles.cards}>
+                    {repertorios.map((repo) => (
+                        <Card
+                            key={repo.id}
+                            descricao={repo.descricao}
+                            titulo={repo.titulo}
+                            imagem={repo.imagem}
+                        />
+                    ))}
+                </section>
+            ) : (
+                <p>Carregando repositórios...</p>
+            )}
         </>
-    )
+    );
 }
 
-export default CFilmes
+export default CFilmes;
