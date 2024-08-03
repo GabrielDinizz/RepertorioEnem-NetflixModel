@@ -10,8 +10,8 @@ function Header() {
                         <img src={repertorioLogo} alt="" />
                     </div>
                     <div className={styles.menu}>
-                        <a href=""><p>Home</p></a>
-                        <a href=""><p>Destaques</p></a>
+                        <a href="/"><p>Home</p></a>
+                        <a href="/"><p>Destaques</p></a>
                     </div>
                 </div>
             </header>

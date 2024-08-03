@@ -1,20 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import styles from '../CFilmes/CFilmes.module.css';
-import Card from '../../components/Card';
+import React, { useState, useEffect } from 'react';
+import Slider from 'react-slick';
+import styles from './CFilmes.module.css';
 
-function CFilmes() {
+const CLivros = () => {
     const [repertorios, setRepertorios] = useState([]);
 
     useEffect(() => {
         const buscarRepertorio = async () => {
             try {
                 const response = await fetch("/repertorio.json");
-                if (!response.ok) {
-                    throw new Error("Network response was not ok");
-                }
                 const data = await response.json();
-                setRepertorios(data.repertorios);
-                setRepertorios(data.repertorios.slice(0, 5)); 
+                setRepertorios(data.repertorios.slice(0, 33));
             } catch (error) {
                 console.error("There was a problem with the fetch operation:", error);
             }
@@ -22,25 +18,50 @@ function CFilmes() {
         buscarRepertorio();
     }, []);
 
-    return (
-        <>
-            <h2 className={styles.title}>Filmes</h2>
-            {repertorios.length > 0 ? (
-                <section className={styles.cards}>
-                    {repertorios.map((repo) => (
-                        <Card
-                            key={repo.id}
-                            descricao={repo.descricao}
-                            titulo={repo.titulo}
-                            imagem={repo.imagem}
-                        />
-                    ))}
-                </section>
-            ) : (
-                <p>Carregando repositórios...</p>
-            )}
-        </>
-    );
-}
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
 
-export default CFilmes;
+
+    return (
+        <div className={styles.carousel}>
+            <Slider {...settings}>
+                {repertorios.length > 0 ? (
+                    repertorios
+                        .filter(repo => repo.tipo === "filme")
+                        .map((repo) => (
+                        <div className={styles.book} key={repo.id}>
+                            <a href={`/details/${repo.id}`}><img className={styles.bookImage} src={repo.imagem} alt={repo.titulo} /></a>
+                        </div>
+                    ))
+                ) : (
+                    <p>Carregando repositórios...</p>
+                )}
+            </Slider>
+        </div>
+    );
+};
+
+export default CLivros;

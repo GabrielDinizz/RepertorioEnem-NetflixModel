@@ -340,15 +340,14 @@
       {
         "id": 27,
         "tipo": "filme",
-        "titulo": "A Vida é Bela",
-        "ano": 1997,
-        "diretor": "Roberto Benigni",
-        "eixos_tematicos": ["História", "Família"],
-        "descricao": "Um filme que narra a história de um pai judeu que utiliza o humor e a criatividade para proteger seu filho dos horrores de um campo de concentração nazista. A obra aborda a brutalidade do Holocausto e a capacidade humana de encontrar esperança em meio ao sofrimento.",
-        "relevancia": 5,
-        "mais_usado_no_enem": 4,
-        "imagem": "https://static.wikia.nocookie.net/dublagem/images/e/e4/Avidaebela.jpg/revision/latest?cb=20240202232904&path-prefix=pt-br"
-
+        "titulo": "O Labirinto do Fauno",
+        "ano": 2006,
+        "diretor": "Guillermo del Toro",
+        "eixos_tematicos": ["Fantasia", "Guerra"],
+        "descricao": "Situado na Espanha pós-guerra, este filme mistura elementos de fantasia com a dura realidade da guerra civil. A história segue uma jovem que, em meio a um ambiente brutal, descobre um mundo mágico que pode ser a chave para sua sobrevivência e resistência contra a tirania.",
+        "relevancia": 4,
+        "mais_usado_no_enem": 3,
+        "imagem": "https://media.fstatic.com/ODCroPgd79deEvhIQMz5EUBUOhQ=/322x478/smart/filters:format(webp)/media/movies/covers/2011/06/b9ee968de98431324d3e1a0e4fe2a22a.jpg"
       },
       {
         "id": 28,
