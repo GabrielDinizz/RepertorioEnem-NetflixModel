@@ -37,3 +37,15 @@
     justify-content: center;
     width: 100%;
 }
+
+.classificacao {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.classificacao div {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    display: flex;
+}

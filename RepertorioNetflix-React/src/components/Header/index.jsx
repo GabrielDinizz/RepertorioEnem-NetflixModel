@@ -11,7 +11,7 @@ function Header() {
                     </div>
                     <div className={styles.menu}>
                         <a href="/"><p>Home</p></a>
-                        <a href="/"><p>Destaques</p></a>
+                        <a href="/pesquisa"><p>Pesquisar</p></a>
                     </div>
                 </div>
             </header>

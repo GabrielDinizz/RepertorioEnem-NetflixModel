@@ -10,7 +10,7 @@ function Banner() {
                         <p>Joaquim Maria Machado de Assis foi um escritor brasileiro, <br />
                             amplamente reconhecido por críticos, estudiosos, escritores e <br />
                             leitores como o maior expoente da literatura brasileira. </p>
-                        <button>Vizualizar Obra</button>
+                        <a href="/pesquisa"><button>Vizualizar Obra</button></a>
                     </div>
                 </div>
             </section>

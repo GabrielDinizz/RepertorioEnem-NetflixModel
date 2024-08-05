@@ -2,6 +2,8 @@ import styles from '../Details/Details.module.css';
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
+import { FaStar } from 'react-icons/fa';
+
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -27,6 +29,14 @@ function Details() {
     // Dependência adicionada para garantir que a busca seja feita sempre que o ID mudar
 
 
+    // Função para renderizar estrelas com base na relevância
+    const renderStars = (count) => {
+        const stars = [];
+        for (let i = 0; i < count; i++) {
+            stars.push(<FaStar key={i} size={20} color="gold" />);
+        }
+        return stars;
+    };
 
 
     return (
@@ -39,9 +49,15 @@ function Details() {
                             <h1>{repertorio.titulo || "Título não encontrado"}</h1>
                             <p>{repertorio.descricao || "Descrição não encontrado"}</p>
                         </div>
-                        <div className={styles.classificao}>
-                            <div></div>
-                            <div></div>
+                        <div className={styles.classificacao}>
+                            <div>
+                                Relevancia: &nbsp;
+                                {renderStars(repertorio.relevancia || 0)}
+                            </div>
+                            <div>
+                                Utilização no Enem: &nbsp;
+                                {renderStars(repertorio.mais_usado_no_enem || 0)}
+                            </div>
                         </div>
                     </div>
                     <div className={styles.imgDetail}>
