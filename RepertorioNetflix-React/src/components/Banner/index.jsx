@@ -7,9 +7,10 @@ function Banner() {
                 <div className={styles.container}>
                     <div className={styles.Infos}>
                         <h1>Memórias Póstumas <br /> de Brás Cubas</h1>
-                        <p>Joaquim Maria Machado de Assis foi um escritor brasileiro, <br />
-                            amplamente reconhecido por críticos, estudiosos, escritores e <br />
-                            leitores como o maior expoente da literatura brasileira. </p>
+                        <p>Memórias Póstumas de Brás Cubas é um romance escrito por Machado de Assis,
+                            desenvolvido em princípio como folhetim, de março a dezembro de 1880, na
+                            Revista Brasileira, para, no ano seguinte, ser publicado como livro, pela
+                            então Tipografia Nacional como Memorias Posthumas de Braz Cubas.</p>
                         <a href="/pesquisa"><button>Vizualizar Obra</button></a>
                     </div>
                 </div>
