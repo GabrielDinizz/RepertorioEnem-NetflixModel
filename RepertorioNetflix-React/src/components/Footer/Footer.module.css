@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #1a1a1a;
+  font-family: "Inter";
+  margin-top: 4rem;
+}
+
+.containerFooter {
+  display: flex;
+  justify-content: space-between;
+  
+  color: #fff;
+  padding: 20px;
+  max-width: 1440px;
+}
+
+
+.footerSection {
+  max-width: 33%;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  margin: 5px 0;
+}
+
+.languageButton {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
