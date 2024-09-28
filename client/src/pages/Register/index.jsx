@@ -1,20 +1,20 @@
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import LoginCard from '../../components/LoginCard';
-import styles from '../Login/login.module.css';
+import RegisterCard from '../../components/RegisterCard';
+import styles from '../Register/register.module.css';
 
 import React, { useState, useEffect } from 'react';
 
-function Login() {
+function Register() {
     return (
         <>
             <Header />
-            <main>
-                <LoginCard />
+            <main className={styles.mainAlign}>
+                <RegisterCard />
             </main>
             <Footer />
         </>
     );
 }
 
-export default Login;
+export default Register;

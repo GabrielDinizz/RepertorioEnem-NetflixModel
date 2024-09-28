@@ -1,0 +1,17 @@
+.txt-title {
+    color: #ffff;
+}
+
+.btn-create {
+    background-color: #B9090B;
+}
+
+.txt-white {
+    color: #ffff;
+}
+
+.section-height {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
