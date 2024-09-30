@@ -3,7 +3,7 @@ const bcrypt = require('bcryptjs');
 const User = require('../model/user');
 const router = express.Router();
 
-// Rota para registrar um novo usuário
+// Rota para registrar
 router.post('/register', async (req, res) => {
   try {
     const { username, email, password } = req.body;
@@ -33,6 +33,7 @@ router.post('/register', async (req, res) => {
   }
 });
 
+// Rota para logar
 router.post('/login', async (req, res) => {
     try {
         const { email, password } = req.body;
