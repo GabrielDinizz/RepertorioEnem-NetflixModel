@@ -9,14 +9,13 @@ const User = sequelize.define('User', {
   },
   email: {
     type: DataTypes.STRING,
+    unique: true, // Garante que o email seja único
     allowNull: false,
   },
   password: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-}, {
-  timestamps: true,
 });
 
 module.exports = User;

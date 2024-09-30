@@ -1,9 +1,6 @@
 // sync.js
 const sequelize = require('./config/config');
-const User = require('./models/User');
-const Menu = require('./models/Menu');
-const Order = require('./models/Order');
-const OrderItem = require('./models/OrderItem');
+const User = require('./model/user');
 
 sequelize.sync({ force: true }).then(() => {
   console.log('Banco de dados sincronizado.');

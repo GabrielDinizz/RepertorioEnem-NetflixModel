@@ -4,27 +4,34 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const RegisterCard = () => {
-
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+    const [loading, setLoading] = useState(false); // Estado para controle de carregamento
     const navigate = useNavigate();
 
     const handleRegister = async (e) => {
         e.preventDefault();
+        setError(''); // Limpa mensagens de erro antes de nova tentativa
+        setLoading(true); // Inicia carregamento
+
         try {
             await axios.post('http://localhost:5000/api/auth/register', {
                 username,
                 email,
                 password,
             });
+            setUsername(''); // Limpa o campo username
+            setEmail(''); // Limpa o campo email
+            setPassword(''); // Limpa o campo password
             navigate('/login'); // Redirecionar para a página de login após o cadastro
         } catch (error) {
             setError(error.response?.data?.error || 'Erro ao cadastrar');
+        } finally {
+            setLoading(false); // Finaliza carregamento
         }
     };
-
 
     return (
         <>
@@ -44,7 +51,9 @@ const RegisterCard = () => {
                                         type="text"
                                         name="username"
                                         id="username"
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        required
+                                    />
                                 </div>
                                 <div>
                                     <label htmlFor="email" className={`block mb-2 text-sm font-medium text-gray-900 dark:text-white ${styles['txt-white']}`}>Seu Email</label>
@@ -54,7 +63,10 @@ const RegisterCard = () => {
                                         type="email"
                                         name="email"
                                         id="email"
-                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required />
+                                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="name@company.com"
+                                        required
+                                    />
                                 </div>
                                 <div>
                                     <label htmlFor="password" className={`block mb-2 text-sm font-medium text-gray-900 dark:text-white ${styles['txt-white']}`}>Senha</label>
@@ -66,9 +78,23 @@ const RegisterCard = () => {
                                         id="password"
                                         placeholder="••••••••"
                                         className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        required />
+                                        required
+                                    />
                                 </div>
-                                <button type="submit" className={`w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 ${styles['btn-create']}`}>Create an account</button>
+
+                                {/* Exibir mensagem de erro */}
+                                {error && (
+                                    <p className="text-red-500 mt-2">{error}</p>
+                                )}
+
+                                <button
+                                    type="submit"
+                                    className={`w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 ${styles['btn-create']}`}
+                                    disabled={loading} // Desabilita o botão enquanto está carregando
+                                >
+                                    {loading ? 'Carregando...' : 'Criar Conta'}
+                                </button>
+
                                 <p className="text-sm font-light text-gray-500 dark:text-gray-400" style={{ textAlign: 'center' }}>
                                     Já possui uma conta? <a href="/login" className="font-medium text-primary-600 hover:underline dark:text-primary-500">Fazer Login</a>
                                 </p>

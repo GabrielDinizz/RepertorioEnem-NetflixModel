@@ -1,4 +1,7 @@
-import styles from '../LoginCard/loginCard.module.css';
+import styles from '../loginCard/loginCard.module.css';
+import React, { useState } from 'react';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const LoginCard = () => {
 
@@ -8,28 +11,19 @@ const LoginCard = () => {
 
     const handleLogin = async (e) => {
         e.preventDefault();
+        console.log('Email:', email, 'Password:', password);
 
         try {
             const response = await axios.post('http://localhost:5000/api/auth/login', {
                 email,
                 password,
             });
-
-            const { token, role } = response.data;
-
-            // Armazenar o token no localStorage ou sessionStorage
-            localStorage.setItem('token', token);
-
-            // Redirecionar o usuário dependendo do papel
-            if (role === 'admin') {
-                navigate('/admin');
-            } else {
-                navigate('/');
-            }
+            navigate('/');
         } catch (error) {
-            console.error('Erro ao fazer login', error);
+            console.error('Erro ao fazer login', error.response.data.error);
         }
     };
+
 
 
     return (
@@ -61,19 +55,19 @@ const LoginCard = () => {
                                 Senha
                             </label>
                             <div className="mt-2">
-                                <input 
-                                id="password" 
-                                name="password"
-                                type="password" 
-                                autoComplete="current-password" 
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                                required className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" style={{ paddingLeft: '.8rem' }} placeholder="••••••••" />
+                                <input
+                                    id="password"
+                                    name="password"
+                                    type="password"
+                                    autoComplete="current-password"
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    required className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" style={{ paddingLeft: '.8rem' }} placeholder="••••••••" />
                             </div>
                         </div>
 
                         <div>
-                            <button type="submit" className={` ${styles['btn-logar']} flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}>Criar Conta</button>
+                            <button type="submit" className={` ${styles['btn-logar']} flex w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}>Entrar</button>
                         </div>
                     </form>
 
