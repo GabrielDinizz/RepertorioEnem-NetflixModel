@@ -60,6 +60,6 @@ router.post('/login', async (req, res) => {
     }
 });
 
-// Exportar as rotas e o middleware (se necessário)
+// Exportar as rotas (se necessário)
 module.exports =  router;
   
